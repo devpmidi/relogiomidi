@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -15,10 +16,12 @@ body {
 
 .relogio {
     display: flex;
+    flex-wrap: wrap; 
     align-items: center;
     justify-content: space-around;
     height: 300px;
     width: 850px;
+    max-width: 100%; 
     background-image: url(https://imgix.bustle.com/uploads/image/2023/3/15/98485c4a-484f-4383-99ac-7f55c3cbbc3d-taylor-swift-eras-tour-openers-opening-acts-dates-concerts.jpg?w=614&fit=crop&crop=faces&auto=format%2Ccompress);
     border-radius: 40px;
     box-shadow: 0px 8px 10px rgba(112, 7, 126, 0.5);
@@ -36,6 +39,7 @@ body {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, .7);
     border-radius: 6px;
     letter-spacing: 3px;
+    margin: 10px; 
 }
 
 .relogio span {
@@ -47,7 +51,7 @@ body {
     font-size: 10px;
 }
 
-/* Estilo para os botões */
+
 .botao-roxo {
     background-color: #b87abd;
     color: #fff;
@@ -61,4 +65,17 @@ body {
 
 .botao-roxo:hover {
     background-color: #4B035C;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .relogio {
+        width: 100%; 
+        padding: 20px; 
+    }
+
+    .relogio div {
+        width: 100%; 
+        margin: 10px 0; 
+    }
 }
