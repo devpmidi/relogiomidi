@@ -12,7 +12,6 @@ alternarFormatoBtn.addEventListener('click', () => {
 });
 
 mudarHorarioBtn.addEventListener('click', () => {
-    // Adicione aqui a lógica para permitir que o usuário escolha um fuso horário
     const novoFusoHorario = prompt('Digite o novo fuso horário (ex: America/New_York ou America/Sao_Paulo):');
     if (novoFusoHorario) {
         fusoHorario = novoFusoHorario;
