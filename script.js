@@ -4,11 +4,11 @@ const segundos = document.getElementById('segundos');
 const alternarFormatoBtn = document.getElementById('alternarFormato');
 const mudarHorarioBtn = document.getElementById('mudarHorario');
 
-let formato24h = true; // Variável para controlar o formato do relógio
-let fusoHorario = 'UTC'; // Fuso horário padrão
+let formato24h = true; 
+let fusoHorario = 'UTC'; 
 
 alternarFormatoBtn.addEventListener('click', () => {
-    formato24h = !formato24h; // Alternar entre formato 24 e 12 horas
+    formato24h = !formato24h; 
 });
 
 mudarHorarioBtn.addEventListener('click', () => {
@@ -33,7 +33,7 @@ const relogio = setInterval(function time() {
     let s = parseInt(segundo, 10);
 
     if (!formato24h) {
-        hr = (hr % 12) || 12; // Converter para formato de 12 horas
+        hr = (hr % 12) || 12; 
     }
 
     hr = hr < 10 ? '0' + hr : hr;
